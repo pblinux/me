@@ -120,6 +120,17 @@ button { font: inherit; color: inherit; }
 
 .profile .role .item { white-space: nowrap; }
 
+.langs {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font: 500 12px/1 "JetBrains Mono", ui-monospace, monospace;
+}
+
+.langs .i { width: 14px; height: 14px; }
+
 .role a {
   color: var(--text);
   font-weight: 500;
@@ -257,6 +268,7 @@ button { font: inherit; color: inherit; }
 
 .link + .link { border-top: 1px solid var(--border); }
 .link:hover { background: var(--surface-hover); }
+.link--static .link-text small { white-space: normal; text-wrap: pretty; }
 .link--static:hover { background: none; }
 .link--static:hover .link-icon { color: inherit; border-color: var(--border); background: var(--bg); }
 
@@ -336,6 +348,8 @@ button { font: inherit; color: inherit; }
   .page > :nth-child(3) { animation-delay: 0.12s; }
   .page > :nth-child(4) { animation-delay: 0.18s; }
   .page > :nth-child(5) { animation-delay: 0.24s; }
+  .page > :nth-child(6) { animation-delay: 0.30s; }
+  .page > :nth-child(7) { animation-delay: 0.36s; }
 }
 
 @keyframes rise {
@@ -381,4 +395,17 @@ button { font: inherit; color: inherit; }
   margin-bottom: 2px;
   color: var(--muted);
   font: 500 11px/1.4 "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* 404 */
+.page--center {
+  min-height: 100dvh;
+  justify-content: center;
+}
+
+.code {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font: 500 14px/1 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: 0.2em;
 }
