@@ -257,6 +257,8 @@ button { font: inherit; color: inherit; }
 
 .link + .link { border-top: 1px solid var(--border); }
 .link:hover { background: var(--surface-hover); }
+.link--static:hover { background: none; }
+.link--static:hover .link-icon { color: inherit; border-color: var(--border); background: var(--bg); }
 
 .link-icon {
   display: grid;
