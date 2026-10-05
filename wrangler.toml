@@ -1,5 +1,9 @@
-name = "littlelink"
+name = "me"
 compatibility_date = "2026-01-27"
+
+routes = [
+  { pattern = "pblinux.rojas.place", custom_domain = true }
+]
 
 [assets]
 directory = "./"
