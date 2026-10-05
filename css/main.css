@@ -218,6 +218,12 @@ button { font: inherit; color: inherit; }
 .cta:hover { background: var(--accent-hover); }
 .cta:active { transform: scale(0.985); }
 
+.quick {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 .quick-btn {
   display: flex;
   align-items: center;
@@ -359,6 +365,7 @@ button { font: inherit; color: inherit; }
 
 .brand-linkedin { --src: url(../images/icons/linkedin.svg); }
 .brand-github { --src: url(../images/icons/github.svg); }
+.brand-telegram { --src: url(../images/icons/telegram.svg); }
 
 /* Página secundaria */
 .back {
